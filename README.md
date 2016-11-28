@@ -17,7 +17,7 @@ models/person.go
 $ python diffrelo.py -t <hostname> -re <Remote workspace> -lo <Local workspace> -f <diff files list>
 ```
 
-例) 
+例)
 ```
 $ python diffrelo.py -t hoge -re /var/www/html/hoge-project -lo ~/go/src/github.com/hoge -f file.list
 
@@ -28,16 +28,16 @@ local  : ~/go/src/github.com/hoge
 list   : file.list
 ---------------------------------------
 
-Delete tmp remote directory [./tmp/Remote/]
-Delete tmp local directory [./tmp/Local/]
+Delete tmp remote directory (./Remote/)
+Delete tmp local directory (./Local/)
 
 components/utility.go
-[Remote Server] ---> [Local:./tmp/Remote/]
-[Local workspace] ---> [Local:./tmp/Local/]
+[Remote Server] ---> [Local:./Remote/]
+[Local workspace] ---> [Local:./Local/]
 
 models/person.go
-[Remote Server] ---> [Local:./tmp/Remote/]
-[Local workspace] ---> [Local:./tmp/Local/]
+[Remote Server] ---> [Local:./Remote/]
+[Local workspace] ---> [Local:./Local/]
 
 --------------------------------------
 Difference between LOCAL & REMOTE
@@ -54,4 +54,3 @@ Finish ! (^-^)/Bye!
 
 - Difference between LOCAL & REMOTE ... ローカルとリモートサーバで差分があったファイル一覧
 - New Files ... 新規ファイル (リモートファイルには存在しないファイル)
-
